@@ -9,7 +9,7 @@ import logoImg from "../../assets/logo.svg";
 
 const NewEmployee = () => {
 	const [name, setName] = useState("");
-	const [month, setMonth] = useState("January");
+	const [month, setMonth] = useState("Waiting Offer");
 	const [rotation, setRotation] = useState(false);
 	const companyId = localStorage.getItem("companyId");
 
@@ -21,14 +21,14 @@ const NewEmployee = () => {
 		const data = {
 			name,
 			month,
-			rotation
+			rotation,
 		};
 
 		try {
 			await api.post("/employees", data, {
 				headers: {
-					Authorization: companyId
-				}
+					Authorization: companyId,
+				},
 			});
 
 			history.push("/profile");
@@ -50,7 +50,8 @@ const NewEmployee = () => {
 		"October",
 		"September",
 		"November",
-		"December"
+		"December",
+		"Waiting Offer",
 	];
 
 	return (
@@ -63,7 +64,7 @@ const NewEmployee = () => {
 				<form onSubmit={handleNewEmployee}>
 					<input
 						value={name}
-						onChange={e => setName(e.target.value)}
+						onChange={(e) => setName(e.target.value)}
 						placeholder="RDoer name"
 						type="text"
 						required
@@ -71,7 +72,7 @@ const NewEmployee = () => {
 
 					<select
 						name="select"
-						onChange={e => setMonth(e.target.value)}
+						onChange={(e) => setMonth(e.target.value)}
 						value={month}
 						required
 					>

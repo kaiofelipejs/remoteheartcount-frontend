@@ -17,10 +17,10 @@ const Profile = () => {
 		api
 			.get("profile", {
 				headers: {
-					Authorization: companyId
-				}
+					Authorization: companyId,
+				},
 			})
-			.then(response => {
+			.then((response) => {
 				setEmployees(response.data);
 			});
 	}, [companyId]);
@@ -29,11 +29,11 @@ const Profile = () => {
 		try {
 			await api.delete(`employees/${id}`, {
 				headers: {
-					Authorization: companyId
-				}
+					Authorization: companyId,
+				},
 			});
 
-			setEmployees(employees.filter(employee => employee.id !== id));
+			setEmployees(employees.filter((employee) => employee.id !== id));
 		} catch (err) {
 			alert("Erro ao deletar. Tente novamente.");
 		}
@@ -57,7 +57,8 @@ const Profile = () => {
 		"October",
 		"September",
 		"November",
-		"December"
+		"December",
+		"Waiting Offer",
 	];
 
 	return (
@@ -79,10 +80,10 @@ const Profile = () => {
 						<h2 key={month}>{month}</h2>
 						<ul key={index.length + 1}>
 							{employees
-								.filter(employee => {
+								.filter((employee) => {
 									return employee.month === month;
 								})
-								.map(employee => (
+								.map((employee) => (
 									<li key={employee.id}>
 										<span
 											className={employee.rotation ? "rotation" : ""}
