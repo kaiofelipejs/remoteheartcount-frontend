@@ -67,7 +67,7 @@ const Profile = () => {
 				<img src={logoImg} alt="Remote HeartCount" />
 
 				<Link className="button" to="/employees/new">
-					New RDoer!
+					New Employee!
 				</Link>
 				<button type="button" onClick={() => handleLogout()}>
 					<PowerIcon size={18} color="#E02041" />

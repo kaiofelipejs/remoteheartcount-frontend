@@ -65,7 +65,7 @@ const NewEmployee = () => {
 					<input
 						value={name}
 						onChange={(e) => setName(e.target.value)}
-						placeholder="RDoer name"
+						placeholder="Employee first name"
 						type="text"
 						required
 					/>
@@ -94,7 +94,7 @@ const NewEmployee = () => {
 					</label>
 
 					<button className="button" type="submit">
-						New RDoer!
+						New Employee!
 					</button>
 					<Link className="back-link" to="/profile">
 						<ArrowLeft size={16} color="#E02041" />
