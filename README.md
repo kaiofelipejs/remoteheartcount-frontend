@@ -4,11 +4,11 @@
    </a>
 </h1>
 
-<h2 align="center">
+<p align="center">
    <a href="https://github.com/kaiofelipejs/remote-heartcount-backend">
       <img src="https://img.shields.io/badge/Go%20to%20Backend-%E2%86%92-green">
    </a>
-</h2>
+</p>
 
 ## What's HeartCount?
 
@@ -42,11 +42,12 @@ Enter [here](https://remoteheartcount.herokuapp.com/), register your company and
 
 <h2 align="center">
    Contributions of any kind welcome!
-   <h3 align="center">
-      <a href="https://github.com/kaiofelipejs/remote-heartcount-backend">
-         <img src="https://img.shields.io/badge/Go%20to%20Backend-%E2%86%92-green">
-      </a>
-   </h3>
 </h2>
+
+<p align="center">
+   <a href="https://github.com/kaiofelipejs/remote-heartcount-backend">
+      <img src="https://img.shields.io/badge/Go%20to%20Backend-%E2%86%92-green">
+   </a>
+</p>
 
 > _"If you don't understand people, you don't understand business" - Simon Sinek_
