@@ -101,8 +101,8 @@ const Profile = () => {
 										></div>
 										<a
 											href={
-												employee.linkedin_profile !== ""
-													? employee.linkedin_profile
+												employee.linkedinProfile !== ""
+													? employee.linkedinProfile
 													: undefined
 											}
 											target="_blank"
