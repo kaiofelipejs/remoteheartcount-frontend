@@ -83,7 +83,15 @@
 
 .board-month ul li:hover span {
 	opacity: 1;
+}
+
+.board-month ul li a {
+	text-decoration: none;
+}
+
+.board-month ul li a:hover {
 	transition: 0.2s;
+	font-weight: bold;
 }
 
 .rotation:before {
@@ -155,6 +163,7 @@
 .employee-name,
 .employee-name-rotation {
 	transform: translateY(-62px);
+	display: inline-block;
 }
 
 .employee-name {

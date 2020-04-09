@@ -99,8 +99,14 @@ const Profile = () => {
 													: "employee-heart"
 											}
 										></div>
-
-										<p
+										<a
+											href={
+												employee.linkedin_profile !== ""
+													? employee.linkedin_profile
+													: undefined
+											}
+											target="_blank"
+											rel="noopener noreferrer"
 											className={
 												employee.rotation
 													? "employee-name-rotation"
@@ -108,7 +114,7 @@ const Profile = () => {
 											}
 										>
 											{employee.name}
-										</p>
+										</a>
 									</li>
 								))}
 						</ul>

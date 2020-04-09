@@ -10,6 +10,7 @@ import logoImg from "../../assets/logo.svg";
 const NewEmployee = () => {
 	const [name, setName] = useState("");
 	const [month, setMonth] = useState("Waiting Offer");
+	const [linkedin_profile, setLinkedinProfile] = useState();
 	const [rotation, setRotation] = useState(false);
 	const companyId = localStorage.getItem("companyId");
 
@@ -20,6 +21,7 @@ const NewEmployee = () => {
 
 		const data = {
 			name,
+			linkedin_profile,
 			month,
 			rotation,
 		};
@@ -65,9 +67,16 @@ const NewEmployee = () => {
 					<input
 						value={name}
 						onChange={(e) => setName(e.target.value)}
-						placeholder="Employee first name"
+						placeholder="First name"
 						type="text"
 						required
+					/>
+
+					<input
+						value={linkedin_profile}
+						onChange={(e) => setLinkedinProfile(e.target.value)}
+						placeholder="LinkedIn profile"
+						type="url"
 					/>
 
 					<select

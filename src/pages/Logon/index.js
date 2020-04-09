@@ -11,9 +11,12 @@ import "./styles.css";
 
 const Logon = () => {
 	const [id, setId] = useState("");
+	const [valueButton, setValueButton] = useState(false);
 	const history = useHistory();
+
 	async function handleLogin(event) {
 		event.preventDefault();
+		setValueButton(true);
 
 		try {
 			const response = await api.post("sessions", { id });
@@ -22,6 +25,7 @@ const Logon = () => {
 			history.push("/profile");
 		} catch {
 			alert("Falha no login. Tente novamente.");
+			window.location.reload();
 		}
 	}
 
@@ -40,7 +44,8 @@ const Logon = () => {
 						type="text"
 					/>
 					<button className="button" type="submit">
-						Enter
+						{!valueButton && "Enter"}
+						{valueButton && "Loading..."}
 					</button>
 
 					<Link className="back-link" to="/register">
