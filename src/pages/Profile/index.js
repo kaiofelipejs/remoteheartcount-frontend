@@ -72,6 +72,10 @@ const Profile = () => {
 		}
 	}
 
+	function validateClass(condition, ifTrue, ifFalse) {
+		return condition ? ifTrue : ifFalse;
+	}
+
 	return (
 		<div className="profile-container">
 			<header>
@@ -96,32 +100,36 @@ const Profile = () => {
 								.map((employee) => (
 									<li key={employee.id}>
 										<span
-											className={employee.rotation ? "rotation" : ""}
+											className={validateClass(
+												employee.rotation,
+												"rotation",
+												undefined
+											)}
 											onClick={() => handleDeleteEmployee(employee.id)}
 										>
 											<TrashIcon size={20} color="#a8a8b3" />
 										</span>
 
 										<div
-											className={
-												employee.rotation
-													? "employee-heart-rotation"
-													: "employee-heart"
-											}
+											className={validateClass(
+												employee.rotation,
+												"employee-heart-rotation",
+												"employee-heart"
+											)}
 										></div>
 										<a
-											href={
-												employee.linkedinProfile !== ""
-													? employee.linkedinProfile
-													: undefined
-											}
+											href={validateClass(
+												employee.linkedinProfile !== "",
+												employee.linkedinProfile,
+												undefined
+											)}
 											target="_blank"
 											rel="noopener noreferrer"
-											className={
-												employee.rotation
-													? "employee-name-rotation"
-													: "employee-name"
-											}
+											className={validateClass(
+												employee.rotation,
+												"employee-name-rotation",
+												"employee-name"
+											)}
 										>
 											{employee.name}
 										</a>
