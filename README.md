@@ -15,7 +15,7 @@
 In the HR (Human Resources) world, the indicator headcount represents the number of employees in the company. In my team, we decided to name it **HeartCount**.
 The **HeartCount** represents the number of hires/placements we do. We chose the word "heart" instead of "head", to reflect how much we care about our candidates ❤️
 
-<img src="docs/img/fisical-heartcount.png" align="right" width="150px"/>
+<img src="docs/img/fisical-heartcount.png" align="right" width="150px" alt="Physical HeartCount" title="Physical HeartCount"/>
 
 ## The Problem
 
@@ -27,14 +27,14 @@ Then... we created a [**Remote HeartC❤️unt**](https://remoteheartcount.herok
 Now every recruiter can celebrate their placements by writing their candidates´ names to our online HeartCount!
 
 <h2 align="center">
-   <img src="docs/img/login.png">
+   <img src="docs/img/login.png" alt="Login page screenshot" title="Login page">
 </h2>
 
 <br/>
 
-|                                 Home                                  |                                    New Employee                                     |
-| :-------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
-| <img src="docs/img/cards-months.png" title="Office page" width="91%"> | <img src="docs/img/new-employee.png" title="Office page with Sidebar" width="100%"> |
+|                                           Home                                            |                                                  New Employee                                                   |
+| :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+| <img src="docs/img/cards-months.png" alt="Home page screenshot" title="Home" width="91%"> | <img src="docs/img/new-employee.png" alt="New Employee page screenshot" title="New employee page" width="100%"> |
 
 ## How to use?
 
