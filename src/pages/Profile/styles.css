@@ -8,7 +8,7 @@
 .profile-container header {
 	display: flex;
 	align-items: center;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .profile-container header img {
@@ -36,8 +36,8 @@
 }
 
 .profile-container h1 {
-	margin-top: 80px;
-	margin-bottom: 24px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 .boards {

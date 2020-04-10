@@ -61,11 +61,21 @@ const Profile = () => {
 		"Waiting Offer",
 	];
 
+	function quantityEmployees(employees) {
+		switch (employees.length) {
+			case 0:
+				break;
+			case 1:
+				return `${employees.length} new employee!`;
+			default:
+				return `${employees.length} new employees!`;
+		}
+	}
+
 	return (
 		<div className="profile-container">
 			<header>
 				<img src={logoImg} alt="Remote HeartCount" />
-
 				<Link className="button" to="/employees/new">
 					New Employee!
 				</Link>
@@ -73,7 +83,7 @@ const Profile = () => {
 					<PowerIcon size={18} color="#E02041" />
 				</button>
 			</header>
-
+			<h1>{quantityEmployees(employees)}</h1>
 			<section className="boards">
 				{months.map((month, index) => (
 					<div key={index} className="board-month">
