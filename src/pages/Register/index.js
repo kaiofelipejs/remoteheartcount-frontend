@@ -10,15 +10,17 @@ import logoImg from "../../assets/logo.svg";
 const Register = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
+	const [valueButton, setValueButton] = useState(false);
 
 	const history = useHistory();
 
 	async function handleRegister(event) {
 		event.preventDefault();
+		setValueButton(true);
 
 		const data = {
 			name,
-			email
+			email,
 		};
 
 		try {
@@ -28,6 +30,7 @@ const Register = () => {
 		} catch (err) {
 			alert(`Erro no cadastro. Tente novamente.`);
 			console.log(err);
+			window.location.reload();
 		}
 	}
 
@@ -41,19 +44,20 @@ const Register = () => {
 				<form onSubmit={handleRegister}>
 					<input
 						value={name}
-						onChange={e => setName(e.target.value)}
+						onChange={(e) => setName(e.target.value)}
 						placeholder="Company name"
 						type="text"
 					/>
 					<input
 						value={email}
-						onChange={e => setEmail(e.target.value)}
+						onChange={(e) => setEmail(e.target.value)}
 						placeholder="E-mail"
 						type="email"
 					/>
 
 					<button className="button" type="submit">
-						Register
+						{!valueButton && "Register"}
+						{valueButton && "Loading..."}
 					</button>
 					<Link className="back-link" to="/">
 						<ArrowLeft size={16} color="#E02041" />
