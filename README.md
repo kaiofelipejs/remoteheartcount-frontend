@@ -6,7 +6,7 @@
 
 <p align="center">
    <a href="https://github.com/kaiofelipejs/remote-heartcount-backend">
-      <img src="https://img.shields.io/badge/Go%20to%20Backend-%E2%86%92-green">
+      <img src="docs/img/go-to-backend.svg">
    </a>
 </p>
 
@@ -46,7 +46,7 @@ Enter [here](https://remoteheartcount.herokuapp.com/), register your company and
 
 <p align="center">
    <a href="https://github.com/kaiofelipejs/remote-heartcount-backend">
-      <img src="https://img.shields.io/badge/Go%20to%20Backend-%E2%86%92-green">
+      <img src="docs/img/go-to-backend.svg">
    </a>
 </p>
 
