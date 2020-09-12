@@ -13,7 +13,7 @@
     "react-dom": "^16.13.1",
     "react-dom-confetti": "^0.1.3",
     "react-icons": "^3.11.0",
-    "react-router-dom": "^5.1.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },
   "scripts": {
